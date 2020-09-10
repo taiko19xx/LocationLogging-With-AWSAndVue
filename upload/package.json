@@ -1,0 +1,13 @@
+{
+    "name": "upload",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "lambda-multipart-parser": "^0.0.2",
+      "uuid": "^8.2.0"
+    },
+    "devDependencies": {
+      "aws-sdk": "^2.713.0"
+    }
+}
