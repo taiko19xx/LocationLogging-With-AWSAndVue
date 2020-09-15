@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import moment from 'moment-timezone';
+import {DateTime} from 'luxon';
 
 export default {
   name: 'Post',
@@ -49,7 +49,7 @@ export default {
   },
   filters: {
       unixtodate: function (date) {
-          return moment.unix(date).tz('Asia/Tokyo').format('YYYY/MM/DD HH:mm:ss');
+          return DateTime.fromSeconds(date).toFormat('yyyy/LL/dd HH:mm:ss');
       }
   }
 }
